@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Know your MBTI</title>
+    <link rel="stylesheet" href="style.css">
+</head> 
+<body>
+    <div class="container">
+        <div class="screen active" id="home-screen">
+            <h1>Know your MBTI!</h1>
+            <p id="mbti-meaning">MBTI means Myers-Briggs Type Indicator, a popular personality assessment tool that categorizes individuals into 16 distinct personality types based on their preferences in four key areas: Introversion vs. Extraversion, Sensing vs. Intuition, Thinking vs. Feeling, and Judging vs. Perceiving.</p>
+            <p id="start-description">Discover your personality type with our comprehensive MBTI test. Answer a series of questions to find out if you're an introvert or extrovert, a thinker or feeler, and more. Start your journey to self-awareness today!</p>
+            <button id="start-button">Start the Test</button>
+        </div>
+        <div class="screen" id="test-screen">
+            <div class="test-header">
+                <p id="question-info">Question <span id="question-number">1</span> of <span id="total-questions">10</span></p>
+                <h2 id="question-text">Question</h2>
+            </div>
+            <div class="test-answers" id="answers-container">
+                <!-- buttons to be inserted dynamically-->
+            </div>
+
+            <div class="progress-bar id="progress-bar">
+                <div id="progress" class="progress-fill"></div>
+            </div>
+        </div>
+
+        <div id="result-screen" class="screen">
+            <h2>Your MBTI Type is:</h2>
+            <div id="mbti-type" class="mbti-type">
+                <h3 id="mbti-code">MBTI Code</h3>
+                <p id="mbti-description">MBTI Description</p>
+            </div>
+            <button id="restart-button">Re-Take Test</button>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body> 
+</html>
